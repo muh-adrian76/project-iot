@@ -5,18 +5,21 @@ require 'database.php';
 $ruang = $_GET["ruang"];
 $pesan = '';
 $object = [
-    '1' => 'Tolong ruang 1',
-    '2' => 'Tolong ruang 2',
-    '3' => 'Tolong ruang 3',
-    '4' => 'Tolong ruang 4',
-    '5' => 'Tolong ruang 5',
-    '6' => 'Tolong ruang 6',
-    '7' => 'Tolong ruang 7',
-    '8' => 'Tolong ruang 8',
-    '9' => 'Tolong ruang 9',
-    '10' => 'Tolong ruang 10',
-    '11' => 'Tolong ruang 11',
-    '12' => 'Tolong ruang 12'
+    '1' => '*Ruang 1:* Mohon bantuan operasional kelas',
+    '2' => '*Ruang 2:* Mohon bantuan operasional kelas',
+    '3' => '*Ruang 3:* Mohon bantuan operasional kelas',
+    '4' => '*Ruang 4:* Mohon bantuan operasional kelas',
+    '5' => '*Ruang 5:* Mohon bantuan operasional kelas',
+    '6' => '*Ruang 6:* Mohon bantuan operasional kelas',
+    '7' => '*Ruang 7:* Mohon bantuan operasional kelas',
+    '8' => '*Ruang 8:* Mohon bantuan operasional kelas',
+    '9' => '*Ruang 9:* Mohon bantuan operasional kelas',
+    '10' => '*Ruang 10:* Mohon bantuan operasional kelas',
+    '11' => '*Ruang 11:* Mohon bantuan operasional kelas',
+    '12' => '*Ruang 12:* Mohon bantuan operasional kelas',
+    '13' => '*Ruang 13:* Mohon bantuan operasional kelas',
+    '14' => '*Ruang 14:* Mohon bantuan operasional kelas',
+    '15' => '*Ruang 15:* Mohon bantuan operasional kelas'
 ];
 
 foreach ($object as $key => $value) {
@@ -27,7 +30,7 @@ foreach ($object as $key => $value) {
 }
 
 /* -----KIRIM PESAN KE WHATSAPP GROUP----- */
-//The idInstance and apiTokenInstance values are available in your account, double brackets must be removed
+// URL didapatkan dari dokumentasi Green API
 $url = 'https://7103.api.greenapi.com/waInstance7103954187/sendMessage/d782b18fb25347f0ae97ac97ed0c6872885a72334177416aac';
 
 // {
@@ -35,7 +38,7 @@ $url = 'https://7103.api.greenapi.com/waInstance7103954187/sendMessage/d782b18fb
 //   "name": "Excellent Service Diklat"
 // }
 $data = array(
-    'chatId' => '120363021393964214@g.us',
+    'chatId' => '120363297036256879@g.us',
     'message' => $pesan
 );
 
@@ -53,8 +56,8 @@ $response = file_get_contents($url, false, $context);
 echo $response;
 
 /* -----INSERT DATA KE DATABASE----- */
-$waktu = date("H:i:s"); // waktu saat tombol ditekan
-$query = "INSERT INTO iot (ruang, pesan, waktu) VALUES ('$ruang', '$pesan', '$waktu')";
+$query = "INSERT INTO iot (ruang, pesan) VALUES ('$ruang', '$pesan')";
+// Koneksi ke database menggunakan variabel $conn
 
 // MySQL
 // if ($conn->query($query) === TRUE) {
@@ -76,8 +79,17 @@ pg_close($conn);
 /* -----MIGRASI----- */
 // CREATE DATABASE diklat;
 
+// MySQL
 // CREATE TABLE iot (
-//     id INT PRIMARY KEY,
+//     id INT PRIMARY KEY AUTO_INCREMENT,
+//     ruang VARCHAR(3) NOT NULL,
+//     pesan TEXT NOT NULL,
+//     waktu TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+// );
+
+// PostgreSQL
+// CREATE TABLE iot (
+//     id SERIAL PRIMARY KEY,
 //     ruang VARCHAR(3) NOT NULL,
 //     pesan TEXT NOT NULL,
 //     waktu TIMESTAMP DEFAULT CURRENT_TIMESTAMP

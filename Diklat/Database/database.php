@@ -2,6 +2,7 @@
 session_start();
 date_default_timezone_set("Asia/Jakarta");
 
+// Bisa dikembangkan untuk menerapkan environment untuk mengenkripsi kredensial database
 $db_servername = 'localhost';
 $db_username = 'developer';
 $db_password = '12345678';

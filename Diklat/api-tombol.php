@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+require './Database/database.php';
 
 /* -----DATA----- */
 $ruang = $_GET["ruang"];
@@ -19,7 +19,17 @@ $object = [
     '12' => '*Ruang 12:* Mohon bantuan operasional kelas',
     '13' => '*Ruang 13:* Mohon bantuan operasional kelas',
     '14' => '*Ruang 14:* Mohon bantuan operasional kelas',
-    '15' => '*Ruang 15:* Mohon bantuan operasional kelas'
+    '15' => '*Ruang 15:* Mohon bantuan operasional kelas',
+    '16' => '*Ruang 16:* Mohon bantuan operasional kelas',
+    '17' => '*Ruang 17:* Mohon bantuan operasional kelas',
+    '18' => '*Ruang 18:* Mohon bantuan operasional kelas',
+    '19' => '*Ruang 19:* Mohon bantuan operasional kelas',
+    '20' => '*Ruang 20:* Mohon bantuan operasional kelas',
+    '21' => '*Ruang 21:* Mohon bantuan operasional kelas',
+    '22' => '*Ruang 22:* Mohon bantuan operasional kelas',
+    '23' => '*Ruang 23:* Mohon bantuan operasional kelas',
+    '24' => '*Ruang 24:* Mohon bantuan operasional kelas',
+    '25' => '*Ruang 25:* Mohon bantuan operasional kelas'
 ];
 
 foreach ($object as $key => $value) {
@@ -30,15 +40,14 @@ foreach ($object as $key => $value) {
 }
 
 /* -----KIRIM PESAN KE WHATSAPP GROUP----- */
-// URL didapatkan dari dokumentasi Green API
-$url = 'https://7103.api.greenapi.com/waInstance7103954187/sendMessage/d782b18fb25347f0ae97ac97ed0c6872885a72334177416aac';
+// URL didapatkan dari dokumentasi Green API: https://console.green-api.com/app/api/sendMessage
+$api_url = 'https://7103.api.greenapi.com';
+$idInstance = '7103954187';
+$apiTokenInstance = 'd782b18fb25347f0ae97ac97ed0c6872885a72334177416aac';
+$url = "$api_url/waInstance$idInstance/sendMessage/$apiTokenInstance";
 
-// {
-//   "id": "120363297036256879@g.us", <---- 'chatId'
-//   "name": "Excellent Service Diklat"
-// }
 $data = array(
-    'chatId' => '120363297036256879@g.us',
+    'chatId' => '120363297036256879@g.us', // <--- chatId: Tutorial dapat dilihat di folder 'Extract chatId Whatsapp'
     'message' => $pesan
 );
 

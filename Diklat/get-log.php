@@ -1,5 +1,5 @@
 <?php
-require 'database.php';
+require './Database/database.php';
 
 // MySQL
 // $result = $conn->query("SELECT * FROM iot");

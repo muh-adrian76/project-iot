@@ -33,4 +33,4 @@
    - (Opsional) Sesuaikan serverName, apabila ingin men-deploy ke server pribadi atau production
    - Klik tombol Upload dan tunggu hingga selesai
 
-5. **Tekan tombol**
+5. **Buka serial monitor dan lakukan ujicoba (Tekan tombol)**

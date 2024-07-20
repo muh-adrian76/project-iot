@@ -19,8 +19,12 @@
         'Authorization: TOKEN'      // <--- ganti dengan token akun fonnte
     ),
    ```
-4. Simpan dan jalankan file php pada Terminal/Command Line Interface
+3. Simpan dan jalankan file php pada Terminal/Command Line Interface
    
    ![image](https://github.com/user-attachments/assets/c65fd8d4-e98a-4ae0-893b-496375ba3634)
 
-5. Buka file ```response.json``` dan cari **chatId** berdasarkan nama (orang atau grup)
+4. Buka file ```response.json``` dan cari **chatId** berdasarkan nama (orang atau grup)
+
+   ![image](https://github.com/user-attachments/assets/564f700c-3fbc-402d-82ab-257e158e8cd3)
+
+5. (Opsional) Ulangi langkah 3 dan 4 jika ingin mencari chatId dari group yang baru dibuat

@@ -31,6 +31,9 @@
 
    ```
    - (Opsional) Sesuaikan serverName, apabila ingin men-deploy ke server pribadi atau production
+   - Hubungkan kabel data microUSB ke laptop/PC dan ESP32
+   - (Opsional) Install driver berikut jika perangkat tidak dapat terdeteksi: <a href="https://meshtastic.org/docs/getting-started/serial-drivers/esp32/">(Disini)</a>
+   - Select board "ESP32 Dev Module" atau "DOIT ESP32 DEVKIT V1"
    - Klik tombol Upload dan tunggu hingga selesai
 
 5. **Buka serial monitor dan lakukan ujicoba (Tekan tombol)**

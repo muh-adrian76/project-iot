@@ -1,5 +1,5 @@
 ## Panduan Pembuatan Sistem 🛠
-### A. Membuat Rangkaian: <a href="https://whimsical.com/iot-diklat-9wLshGKKeMcKN6F59n3QEG">(Desain Alat & Wiring/Pengkabelan)</a>
+### A. Membuat Rangkaian: (<a href="https://whimsical.com/iot-diklat-9wLshGKKeMcKN6F59n3QEG">Desain Alat, Total Biaya </a>& <a>Video Tutorial</a>)
 ![image](https://github.com/user-attachments/assets/e6681b9b-e366-4427-ba35-1c7926bb32de)
 
 ### B. Menyiapkan Mikrokontroller <a href="https://github.com/muh-adrian76/project-iot/tree/main/Diklat/ESP32">ESP32</a>
@@ -42,7 +42,7 @@
 5. Migrasikan <a href="https://github.com/muh-adrian76/project-iot/tree/main/Diklat/Database">Database</a>
 6. Aktifkan *web server* terlebih dahulu (Dapat menggunakan <a href="https://www.niagahoster.co.id/blog/membuat-website-localhost-xampp/">Apache</a> atau NGINX)
 7. Tampilan log dapat dilihat pada **http://localhost/project-iot/Diklat/**
-8. Secara default, riwayat log akan tersimpan di **server *staging*** (kecuali Anda merubah nilai URL Server pada program <a href="https://github.com/muh-adrian76/project-iot/blob/main/Diklat/ESP32/Testing/Testing.ino">Testing.ino</a>)
+8. Secara default, riwayat log akan tersimpan di **server *staging*** (kecuali Anda merubah nilai ```URL Server``` pada program <a href="https://github.com/muh-adrian76/project-iot/blob/main/Diklat/ESP32/Testing/Testing.ino">Testing.ino</a>)
 
 ## Berikut Hasil Deploy <a href="http://10.14.41.185:8076">Sebelumnya</a> di Server *Staging* 💻
 ### Panduan Update Program pada Server *Staging*

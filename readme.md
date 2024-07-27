@@ -5,4 +5,4 @@
 ![image](https://github.com/user-attachments/assets/53de6c3a-e06c-4c03-ba87-7badfb19aefc)
 
 ## B. Wireless Calling System terintegrasi dengan WhatsApp <a href="https://github.com/muh-adrian76/project-iot/tree/main/Diklat">(Dokumentasi)</a>
-![image](https://github.com/user-attachments/assets/ebf7e52d-24e0-4ebb-9531-c323e45235dd)
+![image](https://github.com/user-attachments/assets/812d70a2-794a-47ec-b9e7-9b5056e359d7)

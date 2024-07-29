@@ -11,8 +11,8 @@ String path = "/";                          // <--- Direktori file api-tombol.ph
 String serverName = host + path + "api-tombol.php";   // <--- Sesuaikan dengan nama file php (API) jika ada perubahan
 
 // Tombol
-String ruang = "1";       // <--- Sesuaikan dengan ruangan yang akan diinstalasi (string = 1 hingga 25)
-const int buttonPin = 15; // <--- Sesuaikan dengan kaki yang tersolder dengan kabel relay NO/Normally Open (tombol)
+String ruang = "konsumsi";  // <--- Sesuaikan dengan ruangan yang akan diinstalasi (string = 1 hingga 25/konsumsi)
+const int buttonPin = 15;   // <--- Sesuaikan dengan kaki yang tersolder dengan kabel relay NO/Normally Open (tombol)
 
 void setup() {
   // Serial monitor

@@ -2,7 +2,7 @@
 require './Database/database.php';
 
 /* -----DATA----- */
-$ruang = $_GET["ruang"];
+$ruang = $_GET["ruang"];    // <--- Query HTTP
 $pesan = '';
 $object = [
     '1' => '*Ruang 1:* Mohon bantuan operasional kelas',
@@ -29,7 +29,8 @@ $object = [
     '22' => '*Ruang 22:* Mohon bantuan operasional kelas',
     '23' => '*Ruang 23:* Mohon bantuan operasional kelas',
     '24' => '*Ruang 24:* Mohon bantuan operasional kelas',
-    '25' => '*Ruang 25:* Mohon bantuan operasional kelas'
+    '25' => '*Ruang 25:* Mohon bantuan operasional kelas',
+    'konsumsi' => '*Konsumsi sudah di drop point, segera didistribusikan*'
 ];
 
 foreach ($object as $key => $value) {

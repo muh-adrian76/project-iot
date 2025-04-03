@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoring Smart Garden</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    <h2>Monitoring Sensor Kelembapan</h2>
+    <h2>Monitoring Sensor Kelembapan Abah Andy</h2>
     <table border="1">
         <thead>
             <tr>
@@ -19,13 +21,13 @@
         <tbody id="data">
         </tbody>
     </table>
-    
+
     <script>
         function loadData() {
             $.ajax({
                 url: "data.php",
                 method: "GET",
-                success: function(response) {
+                success: function (response) {
                     $("#data").html(response);
                 }
             });
@@ -34,4 +36,5 @@
         loadData();
     </script>
 </body>
+
 </html>

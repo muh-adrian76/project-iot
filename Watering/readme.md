@@ -76,6 +76,7 @@ try:
             penyiraman()
         
         time.sleep(10)
+        
 except KeyboardInterrupt:
     GPIO.cleanup()
     conn.close()

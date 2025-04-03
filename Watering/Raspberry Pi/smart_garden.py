@@ -39,6 +39,7 @@ try:
             penyiraman()
         
         time.sleep(10) # Delay pembacaan sensor (detik)
+        
 except KeyboardInterrupt:
     GPIO.cleanup()
     conn.close()

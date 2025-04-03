@@ -11,10 +11,18 @@ Sistem penyiraman tanaman otomatis berbasis IoT menggunakan Raspberry Pi. Penyir
 5. Breadboard dan kabel jumper
 6. Catu daya 5V untuk Raspberry Pi dan pompa air
 
-## Diagram Koneksi
-(Gambar diagram koneksi sesuai dengan file yang diberikan)
+## RAB
+![image](https://github.com/user-attachments/assets/8cf17189-830a-49a2-935a-228c5c6af39d)
 
-## Instalasi Database dan Web Server
+## Diagram Wiring / Pengkabelan
+![image](https://github.com/user-attachments/assets/319dfb6c-0dbc-44e5-bd4f-10a13ee4e4aa)
+
+## Contoh Instalasi Hardware
+![image](https://github.com/user-attachments/assets/39baf790-534e-4140-bd55-2c2ac4a69828)
+
+![image](https://github.com/user-attachments/assets/190aa9cc-78b0-417a-9ec8-3c5a8eacc939)
+
+## Instalasi Software (Database dan Web Server)
 ### 1. Instalasi MySQL dan Apache di Raspberry Pi
 ```sh
 sudo apt update && sudo apt upgrade -y
@@ -162,3 +170,18 @@ sudo systemctl restart apache2
 ```sh
 http://<IP_RASPBERRY_PI>/index.php
 ```
+
+## Tutorial Lainnya
+- Install Raspi OS : 
+https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html
+- Untuk meremote raspi pada laptop dengan GUI (Tutorial sudah ada pada web diatas) :
+  - Remote raspi menggunakan SSH.
+  - Aktifkan port VNC.
+  - Download VNC viewer.
+  - Remote raspi menggunakan VNC. 
+- Menggunakan konektor splicing untuk menyambung 2 kabel jumper : 
+https://www.youtube.com/watch?v=PoSJHY2Y1ys
+
+## Referensi
+- https://medium.com/technology-hits/simplified-raspberry-pi-plant-watering-system-942099e4e2cd
+- https://www.makerspace-online.com/watering-pi-2/
